@@ -1,0 +1,41 @@
+<script>
+
+$(document).ready(function(){
+	$("#board").hide();
+});
+</script>
+
+
+<div id="boardContainer" class="container">
+	<div class="banner topBanner">
+		<div id="highScore" class="bannerElement">HighScore: {{ highScore }}</div>
+        <div id="currentScore" class="bannerElement">0</div>
+		<div id="timer" class="bannerElement"></div>
+	</div>
+	<div class="banner bottomBanner">
+		<div class="cornerElement"></div>
+		<circle id="targetSum" class="green"></circle>
+		<div class="cornerElement"></div>
+	</div>
+    <div id="operations">
+			<div id="reset" class="stylish resetButton" onclick="startButtonClicked()">New game</div>
+		</div>
+	<div id="board" class="board">
+		
+		<div class="tiles">
+			<div id="square0" class="square noselect">
+			    <div id="0" class="content numbers" onclick="select(0,document.getElementById('0').innerHTML)">0</div>
+			</div>
+			<div id="square1" class="square noselect">
+			    <div id="1" class="content numbers" onclick="select(1,document.getElementById('1').innerHTML)">1</div>
+			</div>
+			<div id="square2" class="square noselect">
+			    <div id="2" class="content numbers" onclick="select(2,document.getElementById('2').innerHTML)">2</div>
+			</div>
+			<div id="square3" class="square noselect">
+			    <div id="3" class="content numbers" onclick="select(3,document.getElementById('3').innerHTML)">3</div>
+			</div>
+		</div>
+
+	</div>
+</div>

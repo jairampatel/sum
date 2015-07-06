@@ -1,0 +1,139 @@
+body {
+  padding: 20px 0px 0px 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center
+}
+ul
+{
+    list-style-type: none;
+    padding:0; 
+    margin:0;
+}
+a {
+  color: #00B7FF;
+}
+
+.startScreen {
+  margin-left: 23px;
+}
+.container{
+	width: 500px;
+  height: 550px;
+  background-color: #F0F0F5;
+}
+
+.board {
+    
+}
+
+.tiles {
+  padding-left: 65px;
+}
+
+.banner {
+    display:flex;
+}
+
+.topBanner{
+  height: 30px;
+}
+
+.bottomBanner{
+  height: 80px; 
+}
+
+#currentLevel {
+
+}
+
+#targetSum {
+    color: #3B6916;
+    width: 80px;
+    font-size: 35px;
+}
+
+#timer {
+    color: red;
+}
+
+.cornerElement {
+  width: 210px;
+}
+.bannerElement {
+    width: 166px;
+    font-size: 20px;
+}
+circle.green {
+    border: 3px solid #06BB32;
+    margin-left: 23px;
+}
+
+circle {
+  background: none;
+  border-radius: 0.8em;
+  -moz-border-radius: 3.0em; 
+  -webkit-border-radius: 3.0em;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 80px;
+  text-align: center;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin:1px;
+    background-color:white;
+    border: 2px solid #003380;
+    overflow:hidden;
+}
+
+.content {
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    padding: 9%;
+    text-align:center;
+    
+}
+
+.numbers{
+    font-weight:900;
+    font-size:90px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#operations{
+    display: -webkit-inline-box;
+    margin-left: 25px;
+}
+.resetButton {
+  width: 100px;
+}
+.operation {
+  width: 50px;
+}
+.stylish
+{
+    background: none;
+    border: 2px solid #1097B6;
+    border-radius: 10px;
+    color: #9C19F5;
+    display: block;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 1px; 
+}
