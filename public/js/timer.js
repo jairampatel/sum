@@ -1,5 +1,5 @@
 var seconds;
-var START_TIMER = 10;
+var START_TIMER = 20;
 
 var current_time;
 var timer;
