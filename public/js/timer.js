@@ -14,6 +14,7 @@ function decrementTime(){
 		greyOutTiles();
 		clearInterval(timer);
         showReplayButton();
+        resetEndNumber();
         sendHighScore();
 	}
 	updateTimer();

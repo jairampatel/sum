@@ -1,4 +1,6 @@
 var MAX_SELECTED = 2;
+var START_END_NUMBER = 10;
+
 var currentSum;
 
 var tileNumbers = [];
@@ -8,7 +10,7 @@ var currentScore = 0;
 var highScore = 0;
 
 var startNumber = 1;
-var endNumber= 10;
+var endNumber= START_END_NUMBER;
 
 var sum;
 var tiles;
@@ -64,6 +66,9 @@ function getNumbersAndSum(){
 	};
 }
 
+function resetEndNumber(){
+    endNumber= START_END_NUMBER;
+}
 function updateStartAndEndNumbers(){
 	endNumber += 1;
 }
