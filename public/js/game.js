@@ -119,22 +119,14 @@ function getHighScore(){
 function setHighScore(newHighScore){
     highScore = newHighScore;
 }
-function sendHighScore(){
+function handleHighScore(){
+    var hs = getHighScore();
+    var score = getScore();
     
-    $.ajax({                    
-        url: '/newHighScore',     
-        type: 'post',
-        data : {
-        highScore : getScore().toString()
-        },
-        dataType: 'json',                   
-        success: function(data)         
-        {
-            var hs = data.highScore;
-
-            setHighScore(hs);
-            updateHighScore();
-        }
-    });
+    if(score > getHighScore()){
+        setHighScore(score);
+    
+        createCookie("highScore",score);
+        updateHighScore();
+    }
 }
-

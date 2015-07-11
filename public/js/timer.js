@@ -1,5 +1,5 @@
 var seconds;
-var START_TIMER = 30;
+var START_TIMER = 5;
 
 var current_time;
 var timer;
@@ -15,7 +15,7 @@ function decrementTime(){
 		clearInterval(timer);
         showReplayButton();
         resetEndNumber();
-        sendHighScore();
+        handleHighScore();
 	}
 	updateTimer();
 }
