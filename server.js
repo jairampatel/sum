@@ -27,28 +27,6 @@ app.get('/', function(req,res){
     });
 });
 
-app.post('/newHighScore', function(req, res){
-    var hs = req.body.highScore;
-    var currentHighScore;
-    
-
-    if(req.cookies.highScore){
-        currentHighScore = req.cookies.highScore;
-        if(hs > currentHighScore){
-            currentHighScore = hs;
-            res.cookie("highScore",hs);   
-        }
-    }
-    else {
-        currentHighScore = hs;
-        res.cookie("highScore", hs);
-    }
-    res.send({
-                "status" : "success",
-                "highScore" : currentHighScore             
-             });
-});
-
 
 
 var port = Number(process.env.PORT || 5000);
