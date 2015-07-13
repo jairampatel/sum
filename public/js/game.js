@@ -15,6 +15,10 @@ var endNumber= START_END_NUMBER;
 var sum;
 var tiles;
 
+function resetTileNumbersAndSelected(){
+    tileNumbers = [];
+    selected = [];   
+}
 function toggle(index,num){
 	var result = DESELECTED;
 	// If element does not exist

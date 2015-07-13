@@ -16,6 +16,7 @@ function decrementTime(){
         showReplayButton();
         resetEndNumber();
         handleHighScore();
+        resetTileNumbersAndSelected();
 	}
 	updateTimer();
 }
